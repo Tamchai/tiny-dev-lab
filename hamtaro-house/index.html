@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamtaro House | บ้านแฮมสเตอร์</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand"><div class="brand-mark">🐹</div><div><h1>Hamtaro House</h1><p class="subtitle">บ้านหลังเล็กของเจ้าตัวจิ๋วที่แสนน่ารัก</p></div></div>
+      <div class="wallet"><span class="coin">฿</span><span id="coins">120</span> เหรียญ</div>
+    </header>
+    <div class="layout">
+      <section class="room" aria-label="ห้องของแฮมสเตอร์">
+        <div class="window"></div><div class="sun">☀</div><div class="room-label">ห้องนั่งเล่นของโมจิ</div>
+        <div class="speech" id="speech">วันนี้อยากทำอะไรดีนะ?</div>
+        <div class="hamster" id="hamster" aria-label="โมจิ แฮมสเตอร์ของคุณ">
+          <div class="ear left"></div><div class="ear right"></div><div class="hamster-body"><div class="belly"></div><div class="paw left"></div><div class="paw right"></div></div>
+          <div class="face"><div class="eye left"></div><div class="eye right"></div><div class="cheek left"></div><div class="cheek right"></div><div class="nose"></div><div class="mouth"></div></div>
+        </div>
+        <div class="prop wheel">🎡</div><div class="prop bed">🧺</div><div class="prop flower">🌼</div>
+      </section>
+      <aside class="panel">
+        <section class="card">
+          <div class="pet-name"><strong>โมจิ</strong><span class="mood" id="mood">อารมณ์ดี</span></div>
+          <div class="stat"><div class="stat-head"><span>🍎 ความหิว</span><span id="hungerText">72%</span></div><div class="bar"><div class="fill hunger" id="hunger"></div></div></div>
+          <div class="stat"><div class="stat-head"><span>💧 ความกระหาย</span><span id="thirstText">64%</span></div><div class="bar"><div class="fill thirst" id="thirst"></div></div></div>
+          <div class="stat"><div class="stat-head"><span>✨ ความสนุก</span><span id="funText">80%</span></div><div class="bar"><div class="fill fun" id="fun"></div></div></div>
+          <div class="stat"><div class="stat-head"><span>🫧 ความสะอาด</span><span id="cleanText">88%</span></div><div class="bar"><div class="fill clean" id="clean"></div></div></div>
+        </section>
+        <section class="card"><h2>ดูแลโมจิ</h2><div class="actions">
+          <button class="action" data-action="feed"><span>🥕</span>ให้อาหาร</button><button class="action" data-action="water"><span>🍼</span>เติมน้ำ</button>
+          <button class="action" data-action="play"><span>🎾</span>เล่นด้วยกัน</button><button class="action" data-action="clean"><span>🧹</span>ทำความสะอาด</button>
+        </div></section>
+        <section class="card"><h2>บันทึกวันนี้</h2><div class="log" id="log">โมจิกำลังรอความรักจากคุณอยู่เลย 💗</div><p class="tip">เคล็ดลับ: ดูแลให้ทุกแถบสูงกว่า <b>30%</b> เพื่อให้โมจิมีความสุข</p></section>
+      </aside>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
